@@ -14,7 +14,7 @@ Installation
 Hoplite can be installed by cloning the master branch and then in a command
 line in the directory of setup.py run:
 
-   pip install --pre .
+    pip install --pre .
 
 hoplite.remotify
 ----------------
@@ -27,13 +27,14 @@ class methods on the remote machine.
 For example if you create a function:
    from hoplite import remotify
 
-   @remotify(__name__)
-   def foo(arg1):
-      print(arg1)
+    @remotify(__name__)
+    def foo(arg1):
+       print(arg1)
 
 A new function will be added to the module on import called remote_foo that
 can be called like:
-   remote_foo(remote_host_name, arg1)
+    
+    remote_foo(remote_host_name, arg1)
 
 This will serialize the arguments and send them to a hoplite server running
 on remote_host_name.
