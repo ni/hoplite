@@ -9,6 +9,14 @@ It does this by loading all modules registered with the setuptool's entry point
 'hoplite.jobs'. These 'jobs' satisfy a simple interface, which allows Hoplite
 to run them, and to report on their status.
 
+Note on Security
+----------------
+Hoplite is not secured in anyway.  The hoplite-server allows installation of arbitrary Python packages, and running arbitrary code.  Use at your own risk.
+
+Support
+-------
+Hoplite is not supported by National Instruments.
+
 Installation
 ------------
 Hoplite can be installed by cloning the master branch and then in a command
